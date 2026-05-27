@@ -70,6 +70,7 @@ The core deterministic engine is exported transparently across four major interf
 2. **Command-Line Interface (CLI)**: Translate active scripts, raw strings, or standard log streams automatically.
 3. **Python Native API**: Directly integrate `error_translator.core.translate_error` into your internal system workflows.
 4. **FastAPI Protocol**: Export translations externally over REST HTTP protocols via the `error_translator.api.server` module (`/translate`, `/health`, `/`).
+5. **Jupyter Notebook Extension**: Automatically translate exceptions in your interactive Jupyter environments via the `%load_ext error_translator` magic command.
 
 ## Developer Quickstart
 
