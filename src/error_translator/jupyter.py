@@ -66,8 +66,12 @@ def load_ipython_extension(ipython):
     # Hijack the default exception handler
     ipython.set_custom_exc((Exception,), custom_exc)
     
-    # Print a nice success message
-    display(Markdown("> **Error Translator loaded!** Any unhandled crashes in this notebook will now be translated."))
+    # Print a nice success message (if in Jupyter)
+    try:
+        display(Markdown("> **Error Translator loaded!** Any unhandled crashes in this notebook will now be translated."))
+    except NameError:
+        # Not in Jupyter environment
+        print("Error Translator loaded!")
 
 
 def unload_ipython_extension(ipython):
