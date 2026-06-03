@@ -85,12 +85,4 @@ For maintainers publishing releases, use the structured template in `.github/rel
 
 Consistent release notes improve both search indexing and LLM retrieval quality by keeping change summaries predictable and machine-readable.
 
-## Optional Performance Build
 
-If you want to test the native matcher path locally, build the optional C extension from the repository root:
-
-```bash
-python setup_ext.py build_ext --inplace
-```
-
-The project will continue to work without this step by using the Python fallback matcher.
