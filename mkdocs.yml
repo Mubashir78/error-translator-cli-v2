@@ -37,6 +37,7 @@ markdown_extensions:
 
 nav:
   - Home: index.md
+  - Features & Integrations: features.md
   - Architecture: ARCHITECTURE.md
   - Examples: examples.md
   - Contributing: CONTRIBUTING.md

@@ -61,7 +61,18 @@ def custom_exc(shell, etype, evalue, tb, tb_offset=None):
 def load_ipython_extension(ipython):
     """
     Loads the Jupyter extension. 
-    Usage in Jupyter: %load_ext error_translator.jupyter
+    
+    Usage in Jupyter: 
+        %load_ext error_translator.jupyter
+        %reload_ext error_translator.jupyter
+        %unload_ext error_translator.jupyter
+        
+    Features:
+        - Automatically catches unhandled exceptions in notebook cells.
+        - Displays the standard Jupyter traceback (for reference).
+        - Renders a beautifully formatted Markdown translation of the error.
+        - Provides the exact location, code context, explanation, and suggested fix.
+        - Includes AST-based insights when applicable.
     """
     # Hijack the default exception handler
     ipython.set_custom_exc((Exception,), custom_exc)

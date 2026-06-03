@@ -16,7 +16,7 @@
       
       
       
-        <link rel="next" href="ARCHITECTURE/">
+        <link rel="next" href="features/">
       
       
         
@@ -320,22 +320,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#demonstration" class="md-nav__link">
+  <a href="#core-design-principles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Demonstration
+        Core Design Principles
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Demonstration">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quickstart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quickstart
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quickstart">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#raw-traceback-input" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Raw Traceback Input
+        Installation
       
     </span>
   </a>
@@ -343,10 +354,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#engine-translation-output" class="md-nav__link">
+  <a href="#basic-usage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Engine Translation Output
+        Basic Usage
       
     </span>
   </a>
@@ -359,32 +370,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-design-principles" class="md-nav__link">
+  <a href="#documentation-navigation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core Design Principles
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-tooling-ecosystem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Tooling Ecosystem
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#developer-quickstart" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Developer Quickstart
+        Documentation Navigation
       
     </span>
   </a>
@@ -395,6 +384,33 @@
   
 </nav>
       
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="features/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Features & Integrations
+  
+
+    
+  </span>
+  
+  
+
+      </a>
     </li>
   
 
@@ -507,22 +523,33 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#demonstration" class="md-nav__link">
+  <a href="#core-design-principles" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Demonstration
+        Core Design Principles
       
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Demonstration">
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#quickstart" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Quickstart
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Quickstart">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#raw-traceback-input" class="md-nav__link">
+  <a href="#installation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Raw Traceback Input
+        Installation
       
     </span>
   </a>
@@ -530,10 +557,10 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#engine-translation-output" class="md-nav__link">
+  <a href="#basic-usage" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Engine Translation Output
+        Basic Usage
       
     </span>
   </a>
@@ -546,32 +573,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#core-design-principles" class="md-nav__link">
+  <a href="#documentation-navigation" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Core Design Principles
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#the-tooling-ecosystem" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        The Tooling Ecosystem
-      
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#developer-quickstart" class="md-nav__link">
-    <span class="md-ellipsis">
-      
-        Developer Quickstart
+        Documentation Navigation
       
     </span>
   </a>
@@ -622,58 +627,37 @@
 <p><br></p>
 <p><img alt="Error Translator CLI V2 demo banner" src="assets/images/banner.png" /></p>
 <p><br></p>
-<p>Error Translator parses raw Python tracebacks and converts them into readable explanations with actionable fixes. It uses a deterministic, offline regex-matching engine that powers the CLI, Python API, auto-hook mode, Jupyter notebooks, and a FastAPI service with a bundled web UI.</p>
-<p>For faster matching on supported platforms, the engine can also use an optional C extension (<code>fast_matcher</code>) and automatically falls back to pure Python when the extension is unavailable.</p>
+<p><strong>Error Translator</strong> parses raw Python tracebacks and converts them into readable explanations with actionable fixes. Built for local-first development workflows, it uses a deterministic, offline regex-matching engine that powers a CLI, Python API, auto-hook mode, Jupyter notebooks, and a FastAPI service.</p>
 <p>If this project is useful to you, support it with a GitHub star: https://github.com/gourabanandad/error-translator-cli-v2</p>
-<p>Quick links:</p>
-<ul>
-<li>GitHub Repository: https://github.com/gourabanandad/error-translator-cli-v2</li>
-<li>PyPI Package: https://pypi.org/project/error-translator-cli-v2/</li>
-<li>Issues / Feature Requests: https://github.com/gourabanandad/error-translator-cli-v2/issues</li>
-</ul>
-<h2 id="demonstration">Demonstration<a class="headerlink" href="#demonstration" title="Permanent link">&para;</a></h2>
-<h3 id="raw-traceback-input">Raw Traceback Input<a class="headerlink" href="#raw-traceback-input" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>Traceback (most recent call last):
-<a id="__codelineno-0-2" name="__codelineno-0-2" href="#__codelineno-0-2"></a>  File &quot;app.py&quot;, line 14, in &lt;module&gt;
-<a id="__codelineno-0-3" name="__codelineno-0-3" href="#__codelineno-0-3"></a>    total = &quot;Users: &quot; + 42
-<a id="__codelineno-0-4" name="__codelineno-0-4" href="#__codelineno-0-4"></a>TypeError: can only concatenate str (not &quot;int&quot;) to str
-</code></pre></div>
-<h3 id="engine-translation-output">Engine Translation Output<a class="headerlink" href="#engine-translation-output" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a><span class="gu">### Detected Error</span>
-<a id="__codelineno-1-2" name="__codelineno-1-2" href="#__codelineno-1-2"></a>TypeError: can only concatenate str (not &quot;int&quot;) to str
-<a id="__codelineno-1-3" name="__codelineno-1-3" href="#__codelineno-1-3"></a>
-<a id="__codelineno-1-4" name="__codelineno-1-4" href="#__codelineno-1-4"></a><span class="gu">### Location</span>
-<a id="__codelineno-1-5" name="__codelineno-1-5" href="#__codelineno-1-5"></a>app.py (line 14)
-<a id="__codelineno-1-6" name="__codelineno-1-6" href="#__codelineno-1-6"></a>
-<a id="__codelineno-1-7" name="__codelineno-1-7" href="#__codelineno-1-7"></a><span class="gu">### Code Context</span>
-<a id="__codelineno-1-8" name="__codelineno-1-8" href="#__codelineno-1-8"></a>total = &quot;Users: &quot; + 42
-<a id="__codelineno-1-9" name="__codelineno-1-9" href="#__codelineno-1-9"></a>
-<a id="__codelineno-1-10" name="__codelineno-1-10" href="#__codelineno-1-10"></a><span class="gu">### Explanation</span>
-<a id="__codelineno-1-11" name="__codelineno-1-11" href="#__codelineno-1-11"></a>You are trying to add a string to an int, which Python cannot do.
-<a id="__codelineno-1-12" name="__codelineno-1-12" href="#__codelineno-1-12"></a>
-<a id="__codelineno-1-13" name="__codelineno-1-13" href="#__codelineno-1-13"></a><span class="gu">### Suggested Fix</span>
-<a id="__codelineno-1-14" name="__codelineno-1-14" href="#__codelineno-1-14"></a>Convert the int to a string first using str() before concatenating.
-</code></pre></div>
-<p>The CLI renders this output with a polished Rich terminal layout (rounded panels, clear section titles, and syntax-highlighted code context).</p>
+<p>Quick links:
+- GitHub Repository: https://github.com/gourabanandad/error-translator-cli-v2
+- PyPI Package: https://pypi.org/project/error-translator-cli-v2/
+- Issues / Feature Requests: https://github.com/gourabanandad/error-translator-cli-v2/issues</p>
 <h2 id="core-design-principles">Core Design Principles<a class="headerlink" href="#core-design-principles" title="Permanent link">&para;</a></h2>
 <ul>
 <li><strong>Privacy-First (Offline)</strong>: Your stack traces and source code snippets never leave your machine. The regex and AST engines operate entirely locally.</li>
-<li><strong>Deterministic Matching</strong>: Regex rules are compiled once and reused, so outputs stay consistent for the same error text.</li>
+<li><strong>Deterministic Matching</strong>: Regex rules are compiled once and reused, ensuring consistent outputs for the same error text.</li>
 </ul>
-<h2 id="the-tooling-ecosystem">The Tooling Ecosystem<a class="headerlink" href="#the-tooling-ecosystem" title="Permanent link">&para;</a></h2>
-<p>The core deterministic engine is exported transparently across four major interfaces:</p>
-<ol>
-<li><strong>Automatic Integration Hook</strong>: Catch uncaught exceptions locally in your scripts.</li>
-<li><strong>Command-Line Interface (CLI)</strong>: Translate active scripts, raw strings, or standard log streams automatically.</li>
-<li><strong>Python Native API</strong>: Directly integrate <code>error_translator.core.translate_error</code> into your internal system workflows.</li>
-<li><strong>FastAPI Protocol</strong>: Export translations externally over REST HTTP protocols via the <code>error_translator.api.server</code> module (<code>/translate</code>, <code>/health</code>, <code>/</code>).</li>
-<li><strong>Jupyter Notebook Extension</strong>: Automatically translate exceptions in your interactive Jupyter environments via the <code>%load_ext error_translator</code> magic command.</li>
-</ol>
-<h2 id="developer-quickstart">Developer Quickstart<a class="headerlink" href="#developer-quickstart" title="Permanent link">&para;</a></h2>
-<p>To install Error Translator globally via your package manager:</p>
-<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>pip<span class="w"> </span>install<span class="w"> </span>error-translator-cli-v2
+<h2 id="quickstart">Quickstart<a class="headerlink" href="#quickstart" title="Permanent link">&para;</a></h2>
+<h3 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h3>
+<p>Requires Python 3.9 or newer. Install globally via pip:</p>
+<div class="highlight"><pre><span></span><code><a id="__codelineno-0-1" name="__codelineno-0-1" href="#__codelineno-0-1"></a>pip<span class="w"> </span>install<span class="w"> </span>error-translator-cli-v2
 </code></pre></div>
-<p>We recommend navigating to the <a href="CONTRIBUTING/"><strong>Contributing Guidelines</strong></a> to familiarize yourself with adding and extending deterministic rules using our automated Rule Builder tools.</p>
+<h3 id="basic-usage">Basic Usage<a class="headerlink" href="#basic-usage" title="Permanent link">&para;</a></h3>
+<p>Run a Python script and translate unhandled exceptions:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-1-1" name="__codelineno-1-1" href="#__codelineno-1-1"></a>explain-error<span class="w"> </span>run<span class="w"> </span>script.py
+</code></pre></div></p>
+<p>Provide an error string directly:
+<div class="highlight"><pre><span></span><code><a id="__codelineno-2-1" name="__codelineno-2-1" href="#__codelineno-2-1"></a>explain-error<span class="w"> </span><span class="s2">&quot;NameError: name &#39;usr_count&#39; is not defined&quot;</span>
+</code></pre></div></p>
+<p>For more advanced integrations (Jupyter, FastAPI, Import Hooks), please refer to the <a href="features/">Features &amp; Integrations</a> guide.</p>
+<h2 id="documentation-navigation">Documentation Navigation<a class="headerlink" href="#documentation-navigation" title="Permanent link">&para;</a></h2>
+<ul>
+<li><a href="features/"><strong>Features &amp; Integrations</strong></a>: Comprehensive guide on all usage modes (CLI, Jupyter, FastAPI, etc.).</li>
+<li><a href="examples/"><strong>Real-World Examples</strong></a>: Practical demonstrations comparing raw tracebacks with translated outputs.</li>
+<li><a href="ARCHITECTURE/"><strong>Architecture &amp; Internals</strong></a>: Technical breakdown of the engine, rule pipeline, and native acceleration.</li>
+<li><a href="CONTRIBUTING/"><strong>Contributing Guidelines</strong></a>: Guidelines for adding rules and using the AI-Powered Rule Builder.</li>
+</ul>
 
 
 
